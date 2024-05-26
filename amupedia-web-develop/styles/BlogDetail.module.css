@@ -1,0 +1,145 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 40px;
+}
+
+.blogHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blogHeaderInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1700px;
+  gap: 35px;
+  flex-wrap: wrap;
+  margin-top: 8%;
+}
+
+.blogHeaderInfoLeft,
+.blogHeaderInfoRight {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+.blogHeaderInfoLeft > ul {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.blogHeaderInfoLeft > ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  color: rgb(68, 68, 68);
+  fill: rgb(68, 68, 68);
+  cursor: pointer;
+}
+
+.blogHeaderInfoLeft > ul li:last-child {
+  color: green;
+  fill: green;
+  transition: 0.3s;
+}
+.blogHeaderInfoLeft > ul li:last-child:hover{
+  color: rgb(69, 207, 69);
+  fill: rgb(69, 207, 69);
+}
+
+.blogHeaderInfoRight {
+  gap: 28px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.socialIcons > li {
+  font-size: 20px;
+  color: rgb(68, 68, 68);
+  fill: rgb(68, 68, 68);
+}
+
+.bookmark_and_more_icon {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  color: rgb(68, 68, 68);
+  fill: rgb(68, 68, 68);
+}
+
+.blogPicture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 1700px;
+  max-height: 1100px;
+  margin: 20px auto;
+  border: 3px solid black;
+}
+
+.blogBody {
+  margin: 0 auto 50px;
+  width: 100%;
+  max-width: 1700px;
+  font-size: x-large;
+}
+
+.otherBlogsCard {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: center;
+  gap: 20px;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.otherBlogsCard > h3 {
+  font-size: 32px;
+}
+
+.blogCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .blogHeaderInfo {
+    justify-content: center;
+    margin-top: 15%;
+  }
+
+  .blogHeaderInfoLeft > ul li {
+    font-size: 18px;
+  }
+  .blogBody{
+    font-size: larger;
+  }
+  .blogHeaderInfo {
+    margin-top: 12%;
+  }
+}
+@media screen and (max-width: 468px) {
+  .blogBody{
+    font-size: large;
+    width: 100%;
+  }
+  .blog {
+    padding: 0 10px;
+  }
+  .blogHeaderInfo {
+    margin-top: 28%;
+  }  
+  
+}

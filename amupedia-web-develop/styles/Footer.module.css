@@ -1,0 +1,123 @@
+/* Footer Styling  */
+/* background overlapping footer  */
+#above_bg {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-size: 23px;
+  background: url('/images/footer/footer_bacg.webp') no-repeat center
+    center/cover;
+  width: 94%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(30px);
+}
+
+#above_bg p {
+  text-align: center;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.outerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageContainer {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+/* social icons  */
+#icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  /* top: 30px; */
+}
+
+.icon {
+  margin: auto 5px;
+  transition: all 0.5s ease;
+}
+
+.icon:hover {
+  filter: drop-shadow(0px 0px 10px white);
+  transform: scale(1.05);
+}
+
+/* contribution background */
+#above_ftbg {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-size: 1.4rem;
+  color: white;
+  background: url('/images/footer/footer_2_bg.webp') no-repeat center
+    right/cover;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 10px 4px 10px;
+  border-radius: 20px;
+}
+
+#above_ftbg p {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-size: 21px;
+  font-weight: bolder;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+/* footer background  */
+#ftbg {
+  background: url('/images/footer/footer_2_bg.webp') no-repeat center
+    center/cover;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 0px;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 5px;
+  overflow: hidden;
+}
+
+#ftbg p {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+/* for mobile phones having width less than 300px */
+@media only screen and (max-width: 299px) {
+  #ftbg {
+    font-size: 5vw;
+    padding-bottom: 3vw;
+  }
+}
+
+@media only screen and (max-width: 299px) {
+  #ftbg a {
+    font-size: 6vw;
+  }
+  .icon {
+    size: 10px !important;
+  }
+  #footer_links {
+    flex-direction: column;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

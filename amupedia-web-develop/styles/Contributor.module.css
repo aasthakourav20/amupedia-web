@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+.profile {
+  border-radius: 50%;
+  height: 200px;
+  margin-bottom: 20px;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+  @media screen and (max-width: 768px) {
+    height: 150px;
+  }
+}
+
+.profile:hover {
+  box-shadow: 0 0 11px rgba(66, 44, 255, 0.8), 0 0 11px rgba(102, 204, 255, 0.8);
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card {
+  margin: 20px;
+  padding: 15px;
+  cursor: pointer;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-weight: 700;
+  font-size: large;
+}
+
+.githubIcon{
+  text-align: center;
+ display: flex;
+ justify-content: center;
+  color: white;
+  background-color: rgb(45, 44, 44);
+  padding: 7px;
+  border-radius: 10px;
+}
+.githubName{
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 8px;
+  color: gainsboro;
+}
